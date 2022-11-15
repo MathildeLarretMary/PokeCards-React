@@ -1,0 +1,85 @@
+@use './../../styles/vars';
+
+%button {
+    font-size: x-large;
+    font-weight: 800;
+    border: none;
+    background-color: transparent;
+}
+
+
+.UniqueCard-background {
+    z-index: 3;
+    background-color: rgba($color: vars.$colorDark, $alpha: 0.73);
+    color: vars.$colorLight;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    .UniqueCard {
+        margin: 35% auto;
+        text-align: center;
+        width: 80vw;
+        height: 500px;
+
+        .close-UniqueCard{
+            @extend %button;
+            color: rgba($color: vars.$colorLight, $alpha: 0.7);
+            top: 7%; left: 20%;
+            position: absolute;
+        }
+
+        h1 {
+            font-size: xx-large;
+            font-weight: 800;
+            margin: 10px auto;
+        }
+
+        img {
+            width: 100%;
+            animation-duration: 0.7s;
+            animation-name: animate;
+            animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+        }
+
+        ul {
+            display: flex;
+            margin: 10px auto;
+            justify-content: center;
+            
+            .typeClass {
+                width: 60px;
+            }
+        }
+
+        .goToCard{
+            @extend %button;
+            color: vars.$colorLight;
+            border: 2px solid rgba($color: vars.$colorLight, $alpha: 0.5);
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 3px 3px 5px 3px;
+        }
+    }
+
+    @media #{vars.$surfaceDuo} {
+        .UniqueCard {
+            margin: 25% auto;
+            width: 60vw;
+        }
+    }
+
+    @media #{vars.$screenTablet} {
+        .UniqueCard {
+            margin: 130px auto;
+            width: 500px;
+        }
+    }
+
+    @media #{vars.$screenDesktop} {
+        .UniqueCard {
+            margin: 150px auto;
+            width: 500px;
+        }
+    }
+}

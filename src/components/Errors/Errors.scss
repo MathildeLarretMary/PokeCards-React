@@ -1,0 +1,59 @@
+@use './../../styles/vars';
+
+%button {
+    font-size: large;
+    font-weight: 800;
+    border: none;
+    background-color: transparent;
+}
+
+.backgroundError {
+    z-index: 3;
+    background-color: rgba($color: vars.$colorDark, $alpha: 0.73);
+    color: vars.$colorLight;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    .div {
+        margin: 100px auto;
+        text-align: center;
+        width: 80vw;
+        height: 500px;
+
+        p {
+            font-size: large;
+            font-weight: 400;
+            margin: 15px auto;
+        }
+
+        .notFound-img {
+            text-align: center;
+            background-image: url('../../../public/notFound.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            background-position: 50%;
+            margin: 0 auto; 
+        }
+
+        .scriptInjection-img{
+            text-align: center;
+            background-image: url('../../../public/Logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            background-position: 50%;
+            margin: 0 auto; 
+        }
+
+        .btn {
+            @extend %button;
+            color: vars.$colorLight;
+            border: 2px solid rgba($color: vars.$colorLight, $alpha: 0.5);
+            border-radius: 15px;
+            padding: 3px 3px 5px 3px;
+        }
+        
+    }
+}

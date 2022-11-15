@@ -1,0 +1,53 @@
+/*https://mybrandnewlogo.com/fr/generateur-de-palette-de-couleurs*/
+
+// COLORS
+$colorDark: #000003;
+$colorMediumDark: #1a2544;
+$colorMedium: #45528d;
+$colorMediumLight: #7c85df;
+$colorLight: #c0bdff;
+
+// MEDIA QUERIES
+$surfaceDuo: "(min-width: 539px)";
+$screenTablet: "(min-width: 768px)";
+$screenDesktop: "(min-width: 1200px)";
+
+// @media #{vars.$surfaceDuo} {
+    
+// }
+
+// @media #{vars.$screenTablet} {
+    
+// }
+
+// @media #{vars.$screenDesktop} {
+    
+// }
+
+// OBJECT VALUES
+$colours-types : (
+    Normal: '#A8A77A',
+    Feu: '#EE8130',
+    Eau: '#6390F0',
+    Électrik: '#F7D02C',
+    Plante: '#7AC74C',
+    Glace: '#96D9D6',
+    Combat: '#C22E28',
+    Poison: '#A33EA1',
+    Sol: '#E2BF65',
+    Vol: '#A98FF3',
+    Psy: '#F95587',
+    Insecte: '#A6B91A',
+    Roche: '#B6A136',
+    Spectre: '#735797',
+    Dragon: '#6F35FC',
+    Ténèbres: '#705746',
+    Acier: '#B7B7CE',
+    Fée: '#D685AD',
+)
+
+// @each $type in vars.$colours-types {
+//     .#{nth($type, 1)} {
+//         background-color: #{nth($type, 2)};
+//     }
+// }

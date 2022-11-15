@@ -1,0 +1,32 @@
+@use './../../styles/vars';
+
+.Cards {
+    .cards-section {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        padding-top: 100px;
+    }
+}
+
+@media #{vars.$surfaceDuo} {
+    .Cards{
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+@media #{vars.$screenTablet} {
+    .Cards{
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
+
+@media #{vars.$screenDesktop} {
+    .Cards{
+        width: 70vw;
+        margin: 0 auto;
+    }
+}

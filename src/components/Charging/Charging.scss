@@ -1,0 +1,58 @@
+@use './../../styles/vars';
+
+.divCanvas {
+    z-index: 3;
+    background-color: rgba($color: vars.$colorDark, $alpha: 0.73);
+    color: vars.$colorLight;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    .showCharge {
+        margin: 100px auto;
+        text-align: center;
+        width: 80vw;
+        height: 500px;
+
+        h1 {
+            color: transparent;
+            background-image: url('../../../public/Title2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .onCharge {
+            background-image: url('../../../public/Logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            height: 150px;
+            margin: 50px auto;
+            -webkit-animation:spin 4s linear infinite;
+            -moz-animation:spin 4s linear infinite;
+            animation:spin 4s linear infinite;
+        }
+
+        @-moz-keyframes spin { 
+            100% { -moz-transform: rotate(360deg); } 
+        }
+        @-webkit-keyframes spin { 
+            100% { -webkit-transform: rotate(360deg); } 
+        }
+        @keyframes spin { 
+            100% { 
+                -webkit-transform: rotate(360deg); 
+                transform:rotate(360deg); 
+            } 
+        }
+
+
+        @media #{vars.$surfaceDuo} {
+            h1{
+                background-position: 50%;
+            }
+        }
+    }
+}

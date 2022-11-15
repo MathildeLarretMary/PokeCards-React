@@ -1,0 +1,37 @@
+@use './../../styles/vars';
+
+%buttonBase {
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    background-color: vars.$colorMediumDark;
+    color: vars.$colorLight;
+}
+
+.Button {
+    text-align: center;
+    background-color: vars.$colorMedium;
+
+    
+}
+
+.show-shiney {
+    @extend %buttonBase;
+    margin: 5px 10px 5px 5px;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-resist{
+    @extend %buttonBase;
+    margin: 5px 5px 5px 10px;
+    left: 0;
+    bottom: 0;
+    height: 35px;
+}
+
+.show-shiney:hover {
+    background-color: vars.$colorMediumLight;
+}
