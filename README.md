@@ -2,7 +2,7 @@
 
 A Pokédex with 898 Pokémons encoded with React.js
 
-API : [Podébuild](https://pokebuildapi.fr/api/v1)
+API : [Pokébuild](https://pokebuildapi.fr/api/v1)
 
 
 ## Hooks Used
